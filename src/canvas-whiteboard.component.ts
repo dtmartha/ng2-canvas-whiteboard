@@ -164,13 +164,13 @@ export class CanvasWhiteboardComponent implements OnInit, AfterViewInit, OnChang
             if (options.redoButtonText) this.redoButtonText = options.redoButtonText;
             if (options.saveDataButtonText) this.saveDataButtonText = options.saveDataButtonText;
 
-            if (options.drawButtonEnabled) this.drawButtonEnabled = options.drawButtonEnabled;
-            if (options.clearButtonEnabled) this.clearButtonEnabled = options.clearButtonEnabled;
-            if (options.undoButtonEnabled) this.undoButtonEnabled = options.undoButtonEnabled;
-            if (options.redoButtonEnabled) this.redoButtonEnabled = options.redoButtonEnabled;
-            if (options.saveDataButtonEnabled) this.saveDataButtonEnabled = options.saveDataButtonEnabled;
+            if (options.drawButtonEnabled !== undefined) this.drawButtonEnabled = options.drawButtonEnabled;
+            if (options.clearButtonEnabled !== undefined) this.clearButtonEnabled = options.clearButtonEnabled;
+            if (options.undoButtonEnabled !== undefined) this.undoButtonEnabled = options.undoButtonEnabled;
+            if (options.redoButtonEnabled !== undefined) this.redoButtonEnabled = options.redoButtonEnabled;
+            if (options.saveDataButtonEnabled !== undefined) this.saveDataButtonEnabled = options.saveDataButtonEnabled;
 
-            if (options.colorPickerEnabled) this.colorPickerEnabled = options.colorPickerEnabled;
+            if (options.colorPickerEnabled !== undefined) this.colorPickerEnabled = options.colorPickerEnabled;
 
             if (options.lineWidth) this.lineWidth = options.lineWidth;
 
