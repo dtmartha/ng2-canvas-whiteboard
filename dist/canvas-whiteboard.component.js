@@ -71,7 +71,7 @@ var CanvasWhiteboardComponent = (function () {
      * @private
      */
     CanvasWhiteboardComponent.prototype._initInputsFromOptions = function (options) {
-        if (options) {
+        if (options !== undefined) {
             if (options.batchUpdateTimeoutDuration)
                 this.batchUpdateTimeoutDuration = options.batchUpdateTimeoutDuration;
             if (options.imageUrl)
