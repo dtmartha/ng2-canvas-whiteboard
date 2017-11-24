@@ -170,7 +170,7 @@ export class CanvasWhiteboardComponent implements OnInit, AfterViewInit, OnChang
             if (options.redoButtonEnabled !== undefined) this.redoButtonEnabled = options.redoButtonEnabled;
             if (options.saveDataButtonEnabled !== undefined) this.saveDataButtonEnabled = options.saveDataButtonEnabled;
 
-            if (options.colorPickerEnabled !== undefined) this.colorPickerEnabled = options.colorPickerEnabled;
+            if (options.colorPickerEnabled) this.colorPickerEnabled = options.colorPickerEnabled;
 
             if (options.lineWidth) this.lineWidth = options.lineWidth;
 
