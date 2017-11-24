@@ -175,6 +175,10 @@ export class CanvasWhiteboardComponent implements OnInit, AfterViewInit, OnChang
             if (options.lineWidth) this.lineWidth = options.lineWidth;
 
             if (options.strokeColor !== undefined) this.strokeColor = options.strokeColor;
+
+            if (options.drawButtonEnabled === false) {
+                this._canDraw = false;
+            }
         }
     }
 
