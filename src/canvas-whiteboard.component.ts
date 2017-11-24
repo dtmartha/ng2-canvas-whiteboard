@@ -146,7 +146,7 @@ export class CanvasWhiteboardComponent implements OnInit, AfterViewInit, OnChang
      * @private
      */
     private _initInputsFromOptions(options: CanvasWhiteboardOptions) {
-        if (options) {
+        if (options ) {
             if (options.batchUpdateTimeoutDuration) this.batchUpdateTimeoutDuration = options.batchUpdateTimeoutDuration;
 
             if (options.imageUrl) this.imageUrl = options.imageUrl;
@@ -174,7 +174,7 @@ export class CanvasWhiteboardComponent implements OnInit, AfterViewInit, OnChang
 
             if (options.lineWidth) this.lineWidth = options.lineWidth;
 
-            if (options.strokeColor) this.strokeColor = options.strokeColor;
+            if (options.strokeColor !== undefined) this.strokeColor = options.strokeColor;
         }
     }
 
